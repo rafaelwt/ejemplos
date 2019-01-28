@@ -1,0 +1,26 @@
+
+  <header (window:scroll)="doSomethingOnWindowsScroll($event)">
+
+    <nav [ngClass]="{'black': topMenu}">
+
+          <div class="menu-icon" (click)="toogle($event)">
+                <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <div class="logo">
+                LOGO
+          </div>
+
+          <div class="menu">
+                <ul [ngClass]="{'showing': mostrar }">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                </ul>
+          </div>
+    </nav>
+
+</header>
+
+
